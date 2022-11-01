@@ -16,10 +16,12 @@
 
     /* ========= */
 
-
     --header-width-image: 622px;
     --header-height-image: 683px;
 
+    /* Font */
+    --font-quote: 'Gilroy-Bold', sans-serif;
+    --font-bold: 500;
 }
 
 
@@ -527,10 +529,133 @@ body {
 .menu__price {
     font-weight: 500;
 }
-.menu__btn{
+
+.menu__btn {
     display: inline-block;
     display: flex;
     justify-content: center;
-
     margin-top: 40px;
+}
+
+/* quate */
+
+.quote {}
+
+.quate__container {
+    max-width: 1599px;
+    margin: 0 auto;
+}
+
+.quote__body {
+    margin-top: 165px;
+}
+
+.quote__row {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.quote__desc {
+    width: 674px;
+    max-height: 668px;
+    padding: 130px 78px 0px 160px;
+
+    background-color: var(--card-color);
+}
+
+.quote__title {
+    font-family: var(--font-quote);
+    font-size: 72px;
+    line-height: 128%;
+
+    color: var(--title-color);
+}
+
+.quote__text {
+    width: 436px;
+    font-family: 'Playfair Display';
+    font-weight: var(--font-bold);
+    font-size: 32px;
+    line-height: 150%;
+
+    color: var(--title-color);
+
+    opacity: 0.87;
+}
+
+.quote__man {
+    margin-top: 71px;
+    margin-bottom: 84px;
+}
+
+.quete__man__row {
+    display: flex;
+    column-gap: 256px;
+}
+
+.man {}
+
+.man__desc {}
+
+.name__man {
+    font-weight: var(--font-bold);
+    font-size: 16px;
+    line-height: 150%;
+
+    color: var(--title-color);
+
+    opacity: 0.87;
+    margin-bottom: 4px;
+}
+
+.name__geo {
+    font-family: 'Poppins';
+    font-weight: var(--font-bold);
+    font-size: 12px;
+    line-height: 133%;
+
+    color: var(--title-color);
+
+    opacity: 0.6;
+    width: 133px;
+}
+
+.quate__man__image {}
+
+.quate__line__row{
+    display: flex;
+    margin-top: 22px;
+    /* margin-top: 22px; */
+    /* margin-bottom: 84px; */
+}
+.quate__line {
+    border: 1px solid #d34646;
+    width: 437px;
+    opacity: 0.20;
+}
+
+.quate__line__white {
+    width: 49px;
+    border: 2px solid #FFFFFF;
+}
+
+.quote__video {
+    position: relative;
+    max-width: 925px;
+}
+.quote__play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform  1s ease-in;
+}
+.quote__play:hover{
+    transform: rotate(360deg);
+    background-color:rgb(124, 106, 6);
+    border-radius: 50%;
+}
+
+.quote__video img {
+    /* max-width: 100%; */
+
 }
