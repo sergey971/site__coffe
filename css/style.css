@@ -548,6 +548,7 @@ body {
 
 .quote__body {
     margin-top: 165px;
+    overflow-x:hidden; 
 }
 
 .quote__row {
@@ -558,7 +559,7 @@ body {
 .quote__desc {
     width: 674px;
     max-height: 668px;
-    padding: 130px 78px 0px 160px;
+    padding: 94px 78px 84px 160px;
 
     background-color: var(--card-color);
 }
@@ -593,7 +594,9 @@ body {
     column-gap: 256px;
 }
 
-.man {}
+.man {
+    
+}
 
 .man__desc {}
 
@@ -622,16 +625,18 @@ body {
 
 .quate__man__image {}
 
-.quate__line__row{
+.quate__line__row {
     display: flex;
     margin-top: 22px;
-    /* margin-top: 22px; */
-    /* margin-bottom: 84px; */
+    margin-bottom: 84px;
 }
+
 .quate__line {
-    border: 1px solid #d34646;
+    opacity: 0.24;
+    border: 1px solid #FFFFFF;
+    
     width: 437px;
-    opacity: 0.20;
+    
 }
 
 .quate__line__white {
@@ -643,19 +648,140 @@ body {
     position: relative;
     max-width: 925px;
 }
-.quote__play{
+
+.quote__play {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: transform  1s ease-in;
+    top: 45%;
+    left: 35%;
+    transition: transform 1s ease-in;
 }
-.quote__play:hover{
+
+.quote__play:hover {
     transform: rotate(360deg);
-    background-color:rgb(124, 106, 6);
+    background-color: rgb(124, 106, 6);
     border-radius: 50%;
 }
 
-.quote__video img {
-    /* max-width: 100%; */
+.quote__video {}
 
+/* blog */
+
+.blog {
+    background-color: var(--body-color)
+}
+
+.blog__body {
+    margin-top: 160px;
+}
+
+.blog__title {
+    margin-bottom: 64px;
+    font-family: "Playfair Display";
+
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 121%;
+
+    color: #ffffff;
+
+    margin-bottom: 64px;
+}
+
+.blog__col__body {
+    background-color: #151217;
+}
+
+.blog__col__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    background-color: #1f1d21;
+    column-gap: 32px;
+    max-width: 406px;
+    flex: 0 1 33.333%;
+    padding: 32px;
+}
+
+.col__row {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.col__date {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+
+    color: #b8b8b8;
+}
+
+.col__title {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #ffffff;
+
+    opacity: 0.87;
+}
+
+.col__text {
+    width: 341px;
+    margin-top: 16px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: left;
+
+    color: #b8b8b8;
+}
+
+.col__image {
+    margin-top: 32px;
+}
+
+.col__image img {
+    max-width: 100%;
+}
+/* ===contact=== */
+.container {
+}
+.contact__body {
+    margin-top: 160px;
+}
+.contact__row {
+    display: flex;
+    align-items:center;
+}
+.contact__desc {
+    background-color:var(--card-color);
+    padding: 74px 35px 88px 64px;
+    row-gap: 32px;
+}
+.contact__block1 {
+}
+.contact__title {
+}
+.contact__day {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.contact__block2 {
+}
+.contact__block3 {
+}
+.contact__image {
+}
+/* footer */
+.footer__navbar__image{
+    margin-top: 160px;
+    text-align: center;
 }
